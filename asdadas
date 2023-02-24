@@ -51,7 +51,7 @@ Environment.FOVSettings = {
 	Transparency = 0.5,
 	Sides = 60,
 	Thickness = 1,
-	Filled = false
+	Filled = false,
 }
 
 Environment.FOVCircle = Drawing.new("Circle")
@@ -227,7 +227,7 @@ function Environment.Functions:ResetSettings()
 		ThirdPerson = false, -- Uses mousemoverel instead of CFrame to support locking in third person (could be choppy)
 		ThirdPersonSensitivity = 3, -- Boundary: 0.1 - 5
 		TriggerKey = "MouseButton2",
-		Toggle = false,
+		Toggle = true,
 		LockPart = "Head" -- Body part to lock on
 	}
 
@@ -240,7 +240,7 @@ function Environment.Functions:ResetSettings()
 		Transparency = 0.5,
 		Sides = 60,
 		Thickness = 1,
-		Filled = false
+		Filled = false,
 	}
 end
 
