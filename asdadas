@@ -34,8 +34,8 @@ Environment.Settings = {
 	TeamCheck = false,
 	AliveCheck = true,
 	WallCheck = false, -- Laggy
-	Sensitivity = 0, -- Animation length (in seconds) before fully locking onto target
-	ThirdPerson = false, -- Uses mousemoverel instead of CFrame to support locking in third person (could be choppy)
+	Sensitivity = 1, -- Animation length (in seconds) before fully locking onto target
+	ThirdPerson = true, -- Uses mousemoverel instead of CFrame to support locking in third person (could be choppy)
 	ThirdPersonSensitivity = 3, -- Boundary: 0.1 - 5
 	TriggerKey = "MouseButton2",
 	Toggle = false,
@@ -223,7 +223,7 @@ function Environment.Functions:ResetSettings()
 		TeamCheck = false,
 		AliveCheck = true,
 		WallCheck = false,
-		Sensitivity = 0, -- Animation length (in seconds) before fully locking onto target
+		Sensitivity = 1, -- Animation length (in seconds) before fully locking onto target
 		ThirdPerson = true, -- Uses mousemoverel instead of CFrame to support locking in third person (could be choppy)
 		ThirdPersonSensitivity = 3, -- Boundary: 0.1 - 5
 		TriggerKey = "MouseButton2",
@@ -244,6 +244,6 @@ function Environment.Functions:ResetSettings()
 	}
 end
 
---// Load
+
 
 Load()
